@@ -1,0 +1,402 @@
+html, body {
+  margin: 0;
+  padding: 0!important;
+  /* background-color:rgba(255, 255, 0, 0.562)!important; */
+   /* This should prevent scrolling */
+   /* Ensure body takes full height */
+}
+
+* {
+  box-sizing: border-box; /* Prevent width/height overflow issues */
+}
+/* body{
+  /* overflow-x: hidden;
+  /* overflow-y: visible; */ 
+
+/* .full-screen-container {
+  position: relative;
+  width: 100vw; 
+  height: 100vh;
+  overflow:hidden
+   
+} */
+
+.full-screen-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure the image covers the full height of the container */
+  object-fit: cover; /* Cover the container while preserving aspect ratio */
+  display: block; /* Ensure no additional space is added by image element */
+  z-index: -1; /* Ensure the image is behind the text */
+}
+
+.text-overlay {
+  position: relative; /* Make sure it stays in the flow */
+  top: 20%; /* Adjust as needed */
+  left: 6%; /* Align text to the left */
+  z-index: 1; /* Make sure it's above the image */
+}
+
+@media (max-width: 768px) {
+  .text-overlay {
+    left: 2%; /* Adjust for smaller screens */
+  }
+}
+
+.thesmokin {
+  font-size: 6rem; /* Adjust this value as needed */
+  line-height: 1; /* Control spacing between lines */
+}
+
+
+  @media (max-width: 1024px) and (max-height: 600px) {
+    .thesmokin {
+      font-size: 4rem !important /* Adjust this value as needed */
+  
+    }
+  }
+  .container-fluid {
+    padding: 0; 
+   
+ 
+    /* Remove padding around the container */
+  }
+ 
+  
+  
+
+ 
+
+  
+  
+ 
+  
+
+  
+
+
+
+
+
+
+
+  .position-relative {
+    position: relative;
+  }
+  
+  .discount-button {
+    position: absolute;
+    top: 10%;   /* Adjust as needed */
+    bottom: 50%; /* Adjust as needed */
+    width: 100px; /* Button size */
+    height: 100px; /* Button size */
+    font-size: 14px; /* Font size */
+    text-align: center;
+  }
+  
+  /* Responsive adjustments for discount button */
+  @media (max-width: 768px) {
+    .discount-button {
+      top: 15%;
+      right: 5%;
+      width: 60px;
+      height: 60px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .discount-button {
+      top: 10%;
+      right: 3%;
+      width: 60px;
+      height: 60px;
+      font-size: 10px;
+    }
+  }
+  
+  .orderonline{
+    position: relative; /* Default: relative for all screen sizes */
+  }
+  
+  .burgertype {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Adjust position on small screens */
+  @media (max-width: 576px) {
+    .orderonline {
+      position: absolute; /* On small screens, change to absolute */
+    }
+    
+    .burgertype{
+      top: 35%; /* Adjust the overlay positioning */
+      left: 30%;
+      transform: translate(-20%, -30%);
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .button1 {
+    position: absolute;
+    left: 50%; /* Center horizontally on small screens */
+    top: 70px; /* Adjust the top position */
+    transform: translate(-50%, 0); /* Centering horizontally */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .button1 {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .button1 {
+    position: absolute;
+    left: 40%; /* Adjusted for medium screens */
+    top: 100px;
+    transform: translate(-40%, 0);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .button1 {
+    position: absolute;
+    left: 30%; /* Adjusted for large screens */
+    top: 115px;
+    transform: translate(-30%, 0);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .button1 {
+    position: absolute;
+    left: 33%;
+    top: 120px; /* Extra top padding for large screens */
+    transform: translate(-30%, 0);
+  }
+}
+
+  /* Adjust position on medium screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .orderonline {
+      position: relative; /* On medium screens, make it relative */
+    }
+  
+    .burgertype {
+    
+      left: 40%;
+      transform: translate(-40%, -40%);
+    }
+  }
+  
+  /* Adjust position on large screens */
+  @media (min-width: 992px) {
+    .orderonline{
+      position: relative; /* On large screens, keep relative */
+    }
+  
+    .burgertype {
+     
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .custombackground{
+    height: 80%;
+    
+  }
+ 
+ 
+  
+ 
+  
+  /* Add hover shadow at the bottom */
+.custom-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+}
+
+
+
+
+
+
+
+
+
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+
+
+@media (max-width: 768px) {
+  .burger-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+.ss {
+  margin-top: 5rem; /* Default for small devices */
+}
+
+@media (min-width: 576px) { /* Small devices */
+  .ss {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 768px) { /* Medium devices */
+  .ss {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 992px) { /* Large devices */
+  .ss {
+    margin-top: 42.4rem;
+  }
+}
+
+@media (min-width: 1200px) { /* Extra-large devices */
+  .ss {
+    margin-top: 50.0rem;
+  }
+}
+.dotted-line {
+  border-top: 2px dotted #000; /* Change color as needed */
+  margin: 10px 0; /* Adjust margin for spacing */
+}
+/*button :hover*/
+.custom-hover:hover {
+  background-color: #00bfff; /* Lighter yellow on hover */
+  color: green; /* Change text color to black */
+  transform: scale(1.05); /* Slightly increase size on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.custom-hover:hover {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: #fff; /* White text on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+.custom-bg-secondary {
+  background-color: rgb(219, 213, 213); /* Light secondary color */
+}
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* This maintains a 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ingredients-section {
+  background-color: #f9a825; /* Set background color similar to the one in the image */
+  color: white;
+  padding: 50px 0;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.ingredient-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+ 
+}
+
+.ingredient-item p {
+  font-size: 14px;
+  color: #fff3e0;
+}
+
+.burger-image {
+  max-width: 100%;
+}
+.custom-button {
+  background-color: #007bff; /* Default background color */
+  color: #fff; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+.burger-image {
+  max-height: 300px; /* Set a maximum height for the image */
+  width: auto; /* Keep width auto to maintain aspect ratio */
+}
+
+@media (max-width: 576px) {
+  .burger-image {
+      max-height: 250px; /* Adjust height for small screens */
+      width: auto; /* Keep width auto to maintain aspect ratio */
+  }
+}
+
+.line{
+border-top: 3px dotted #000; /* Change color as needed */
+margin: 10px 0;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.total-checkout-section {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.total-checkout-section h5 {
+  margin: 0;
+}
+
+.total-checkout-section button {
+  margin-left: 10px;
+}
+
